@@ -1,0 +1,51 @@
+{
+  "name": "mission-briefing",
+  "version": "0.0.1",
+  "description": "",
+  "main": "build/mission-briefing.js",
+  "types": "build/src/MissionBriefing.d.ts",
+  "files": [
+    "demo/browserImport/index.html",
+    "build/mission-briefing.js",
+    "build/mission-briefing.css",
+    "build/src/"
+  ],
+  "scripts": {
+    "build": "webpack",
+    "build-prod": "webpack -p",
+    "deploy": "npm run build && sh deploy.sh ",
+    "watch": "webpack --watch --watch-poll ",
+    "prepublish": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quantumjs/mission-briefing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quantumjs/mission-briefing/issues"
+  },
+  "homepage": "https://github.com/quantumjs/mission-briefing#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.5.4",
+    "css-loader": "^0.26.1",
+    "css-variables": "^0.1.4",
+    "extract-text-webpack-plugin": "2.0.0-rc.1",
+    "html-webpack-plugin": "^2.24.1",
+    "postcss-calc": "^5.3.1",
+    "postcss-css-variables": "^0.6.0",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-import": "^9.1.0",
+    "postcss-loader": "^1.2.2",
+    "postcss-nested": "^1.0.0",
+    "postcss-smart-import": "^0.6.0",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^2.0.0",
+    "typescript": "^2.1.4",
+    "vanilla-typescript": "^0.2.0",
+    "webpack": "^2.2.0",
+    "webpack-build-notifier": "^0.1.13"
+  }
+}
